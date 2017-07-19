@@ -5,7 +5,7 @@ class DatabaseConnection:
     def _init_(self):
         try:
             self.connection = psycopg2.connect(
-                "dbname='testpython' user='adammorris' host='localhost' password='summer22' port='5432' ")
+                "dbname='testpython' user='' host='localhost' password='' port='5432' ")
             self.connection.autocommit = True
             self.cursor = self.connection.cursor()
         except:
